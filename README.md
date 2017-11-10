@@ -1,7 +1,7 @@
 # QXNetwork
 ## A very easy use, high customizable http request tool based on URLSession. With leveled error handler, various of call back handlers and thread safe features.
 
-###Basic request
+### Basic request
 ```
 let request = QXNetwork.Request()
 request.method = .GET
@@ -29,7 +29,7 @@ done?(nil, err)
 ```
 
 
-###Form-Data
+### Form-Data
 ```
 let request = QXNetwork.Request()
 request.method = .POST
@@ -58,7 +58,7 @@ done?(nil, err)
 ```
 
 
-###Form
+### Form
 ```
 let request = QXNetwork.Request()
 request.method = .POST
@@ -83,7 +83,7 @@ done?(nil, err)
 }
 ```
 
-###RAW text
+### RAW text
 ```
 let request = QXNetwork.Request()
 request.method = .POST
@@ -109,7 +109,7 @@ done?(nil, err)
 }
 ```
 
-###BIN data
+### BIN data
 ```
 let request = QXNetwork.Request()
 request.method = .POST
@@ -132,7 +132,7 @@ done?(nil, err)
 ```
 
 
-###Dictionary extension
+### Dictionary extension
 ```
 let request = QXNetwork.Request()
 request.method = .POST
@@ -157,7 +157,7 @@ done?(nil, err)
 ```
 
 
-###Array extension
+### Array extension
 ```
 let request = QXNetwork.Request()
 request.method = .POST
