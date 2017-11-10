@@ -31,7 +31,7 @@ class POST_ARR_VC: BaseViewController {
         
         request.body = QXNetwork.Request.Body.array(arr: [
                 "1", "B", 3.14
-            ]).body
+            ])
         
         request
             .beginTask()

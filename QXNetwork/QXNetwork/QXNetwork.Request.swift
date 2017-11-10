@@ -143,20 +143,19 @@ extension QXNetwork.Request.Body {
     /**
      *  array body extensions Body.raw, utf8/text/json
      */
-    static func array(arr: [Any]) -> (body: QXNetwork.Request.Body?, error: QXNetwork.Error?) {
+    static func array(arr: [Any]) -> QXNetwork.Request.Body? {
         if let data = try? JSONSerialization.data(withJSONObject: arr, options: .prettyPrinted) {
             if let str = String(data: data, encoding: .utf8) {
-                let body = QXNetwork.Request.Body.raw(text: str,
-                                                      encoding: .utf8,
-                                                      contentType: "text/json")
-                return (body, nil)
+                return QXNetwork.Request.Body.raw(text: str,
+                                                  encoding: .utf8,
+                                                  contentType: "text/json")
             } else {
                 let err = QXNetwork.Error.encoding(isDecoding: true, detail: "QXNetwork.Error: can not decoding body array data to raw text. ctx:\(data)")
-                return (nil, err)
+                return QXNetwork.Request.Body.error(error: err)
             }
         } else {
             let err = QXNetwork.Error.encoding(isDecoding: true, detail: "QXNetwork.Error: can not json serialize body with array: \(arr)")
-            return (nil, err)
+            return QXNetwork.Request.Body.error(error: err)
         }
     }
     
