@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		75D7CAE51FB3DF410037A8D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D7CAE41FB3DF410037A8D8 /* AppDelegate.swift */; };
 		75D7CAE71FB3DF410037A8D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D7CAE61FB3DF410037A8D8 /* ViewController.swift */; };
-		75D7CAEA1FB3DF410037A8D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D7CAE81FB3DF410037A8D8 /* Main.storyboard */; };
 		75D7CAEC1FB3DF410037A8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75D7CAEB1FB3DF410037A8D8 /* Assets.xcassets */; };
-		75D7CAEF1FB3DF410037A8D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D7CAED1FB3DF410037A8D8 /* LaunchScreen.storyboard */; };
 		75D7CAFC1FB3DF800037A8D8 /* QXNetwork.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D7CAF71FB3DF800037A8D8 /* QXNetwork.Error.swift */; };
 		75D7CAFD1FB3DF800037A8D8 /* QXNetwork.Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D7CAF81FB3DF800037A8D8 /* QXNetwork.Request.swift */; };
 		75D7CAFE1FB3DF800037A8D8 /* QXNetwork.Respond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D7CAF91FB3DF800037A8D8 /* QXNetwork.Respond.swift */; };
@@ -33,9 +31,7 @@
 		75D7CAE11FB3DF410037A8D8 /* QXNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QXNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D7CAE41FB3DF410037A8D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75D7CAE61FB3DF410037A8D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		75D7CAE91FB3DF410037A8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75D7CAEB1FB3DF410037A8D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		75D7CAEE1FB3DF410037A8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75D7CAF01FB3DF410037A8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75D7CAF71FB3DF800037A8D8 /* QXNetwork.Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QXNetwork.Error.swift; sourceTree = "<group>"; };
 		75D7CAF81FB3DF800037A8D8 /* QXNetwork.Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QXNetwork.Request.swift; sourceTree = "<group>"; };
@@ -95,11 +91,9 @@
 				75D7CB421FB445BC0037A8D8 /* POST_DIC_VC.swift */,
 				75D7CB441FB445C60037A8D8 /* POST_ARR_VC.swift */,
 				75D7CB281FB3F0560037A8D8 /* BaseViewController.swift */,
-				75D7CAE81FB3DF410037A8D8 /* Main.storyboard */,
 				75D7CAEB1FB3DF410037A8D8 /* Assets.xcassets */,
 				75D7CB3B1FB43E310037A8D8 /* image0.png */,
 				75D7CB3A1FB43E310037A8D8 /* image1.png */,
-				75D7CAED1FB3DF410037A8D8 /* LaunchScreen.storyboard */,
 				75D7CAF01FB3DF410037A8D8 /* Info.plist */,
 			);
 			path = QXNetwork;
@@ -149,7 +143,7 @@
 				TargetAttributes = {
 					75D7CAE01FB3DF410037A8D8 = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -176,11 +170,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75D7CAEF1FB3DF410037A8D8 /* LaunchScreen.storyboard in Resources */,
 				75D7CB3D1FB43E310037A8D8 /* image0.png in Resources */,
 				75D7CB3C1FB43E310037A8D8 /* image1.png in Resources */,
 				75D7CAEC1FB3DF410037A8D8 /* Assets.xcassets in Resources */,
-				75D7CAEA1FB3DF410037A8D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,25 +202,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		75D7CAE81FB3DF410037A8D8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75D7CAE91FB3DF410037A8D8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		75D7CAED1FB3DF410037A8D8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75D7CAEE1FB3DF410037A8D8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		75D7CAF11FB3DF410037A8D8 /* Debug */ = {
@@ -342,11 +315,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = QXNetwork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "labi3285-lab.QXNetwork";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -356,11 +332,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = QXNetwork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "labi3285-lab.QXNetwork";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
