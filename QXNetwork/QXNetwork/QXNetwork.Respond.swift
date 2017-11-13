@@ -16,6 +16,11 @@ extension QXNetwork {
     public class Respond {
         
         /**
+         *  init
+         */
+        public init() { }
+        
+        /**
          *  the origin data output come from URLSession dataTask
          */
         public enum Origin {
@@ -137,8 +142,6 @@ extension QXNetwork.Respond {
         case succeed(array: [Any])
         case failed(error: QXNetwork.Error)
     }
-    
-
 
     /**
      *  array output with parse
@@ -212,5 +215,11 @@ extension QXNetwork.Respond {
         }
     }
     
+}
+
+extension QXNetwork.Respond: CustomStringConvertible {
+    public var description: String {
+        return "QXNetwork.Respond:\(self)"
+    }
 }
 

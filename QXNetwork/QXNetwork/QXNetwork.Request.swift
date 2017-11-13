@@ -16,6 +16,11 @@ extension QXNetwork {
     public class Request {
         
         /**
+         *  init
+         */
+        public init() { }
+        
+        /**
          *  request methods types
          */
         public enum Method {

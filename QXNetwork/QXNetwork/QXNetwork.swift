@@ -18,6 +18,13 @@ public class QXNetwork: NSObject {
      */
     public static let shared = QXNetwork()
     
+    /*
+     *  init
+     */
+    public override init() {
+        super.init()
+    }
+    
     /**
      *  begin a new request task
      */

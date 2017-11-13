@@ -16,6 +16,11 @@ extension QXNetwork {
     public class Task {
         
         /**
+         *  init
+         */
+        public init() { }
+        
+        /**
          *  origin URLSessionDataTask made in QXNetwork, never change it in bussiness
          */
         public var task: URLSessionDataTask?
@@ -47,5 +52,11 @@ extension QXNetwork.Task {
         return respond
     }
     
+}
+
+extension QXNetwork.Task: CustomStringConvertible {
+    public var description: String {
+        return "QXNetwork.Task:\(self)"
+    }
 }
 
